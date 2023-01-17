@@ -1,0 +1,334 @@
+/* Base Styles CSS Start */
+
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Base Styles CSS End */
+
+/* Header Part CSS Start */
+
+/* Navigation Section CSS Start */
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 999;
+}
+
+.sticky {
+  background: #ffffff;
+  padding: 25px 0 !important;
+  box-shadow: 1px 1px 20px 0px #dddddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #334368;
+}
+
+.logo img {
+  padding-right: 12px;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin-right: 16px;
+  border: none;
+  border-radius: 100%;
+  background: #54a0b3;
+}
+
+.search-form-field {
+  background: #ffffff;
+  border: 1px solid #54a0b2;
+  border-radius: 50px;
+}
+
+.search-form-field input {
+  background: transparent;
+  padding: 11px 30px;
+  border: none;
+}
+
+.search-form-field input:focus {
+  outline: 0;
+}
+
+.search-form-field span {
+  padding: 11px 30px 11px 0;
+}
+
+.search-form-field ::placeholder {
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+a.login {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  padding: 13px 32px;
+  color: #1d1d1d;
+  background: #fca311;
+  border: 1px solid #fca311;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.login:hover {
+  color: #fca311;
+  background: transparent;
+  border: 1px solid #fca311;
+}
+
+.navbar-toggler {
+  border: 0 !important;
+  margin-top: -15px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.toggler-icon {
+  width: 25px;
+  height: 2px;
+  background-color: #e74c3c;
+  display: block;
+  transition: all 0.2s;
+}
+
+.middle-bar {
+  margin: 5px auto;
+}
+
+.navbar-toggler .top-bar {
+  transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+  transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon {
+  background-color: #151515;
+}
+
+.nav-buttons img {
+  width: 20px;
+}
+
+@media (max-width: 1200px) {
+  nav.navbar {
+    background: #ffffff;
+  }
+
+  .logo {
+    font-size: 25px;
+  }
+
+  button.navbar-toggler {
+    padding-top: 15px;
+  }
+
+  .navbar-nav {
+    padding-top: 30px;
+  }
+
+  .search-form-field input {
+    padding: 11px 0 11px 10px;
+  }
+
+  .search-form-field span {
+    padding: 11px 10px 11px 0;
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+}
+
+/* Navigation Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  padding-bottom: 100px;
+}
+
+.hero-content {
+  position: absolute;
+  padding-top: 180px;
+}
+
+.hero-content h1 {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 83px;
+  color: #121049;
+}
+
+span.adopt,
+span.sell,
+span.meet {
+  margin-right: 10px !important;
+}
+
+span.sell,
+span.meet {
+  margin-left: 20px;
+}
+
+span.adopt::after,
+span.sell::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+}
+
+span.adopt::after {
+  background: #ffd234;
+}
+
+span.sell::after {
+  background: #62d8f4;
+}
+
+span.adopt img,
+span.sell img,
+span.meet img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero-btn a {
+  font-family: "Merriweather", serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background: #1f879f;
+  padding: 20px 32px;
+  border-radius: 40px;
+}
+
+.pets-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 120px;
+}
+
+.single-pet {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.4) 0%,
+    rgba(255, 255, 255, 0.16) 100%
+  );
+  box-shadow: 0px 4px 20px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+}
+
+.single-pet img {
+  padding: 30px;
+}
+
+.single-pet h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #121049;
+  padding: 0 0 20px 30px;
+}
+
+.hero-shape1 {
+  position: absolute;
+  left: 0;
+  bottom: 80px;
+  z-index: -1;
+}
+
+.hero-shape2 {
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  z-index: -1;
+}
+
+/* Hero Section CSS End */
+
+/* Header Part CSS End */
