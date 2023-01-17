@@ -141,6 +141,10 @@
     padding: 0 10px;
   }
 
+  .search-form {
+    max-width: 93%;
+  }
+
   .hero-wrapper .container-fluid {
     padding: 0 10px;
   }
