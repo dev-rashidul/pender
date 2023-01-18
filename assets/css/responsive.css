@@ -287,4 +287,8 @@
     padding: 0 20px 50px;
     margin: auto;
   }
+
+  .upload-post-shape {
+    z-index: -1;
+  }
 }
