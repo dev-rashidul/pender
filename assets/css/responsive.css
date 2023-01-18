@@ -197,6 +197,8 @@
 
   .search-form {
     max-width: 93%;
+    margin: auto;
+    padding-left: 10px;
   }
 
   .search-form-field {
@@ -233,12 +235,16 @@
     top: 16px;
   }
 
+  .nav-buttons {
+    text-align: center;
+  }
+
   .hero-shape1 {
     top: 300px;
   }
 
   .hero-shape2 {
-    bottom: 600px;
+    bottom: 200px;
   }
 
   .hero-shape1 img,
@@ -260,7 +266,7 @@
   }
 
   .hero-img {
-    padding-top: 50px;
+    display: none;
   }
 
   .post-wrapper .container-fluid,
