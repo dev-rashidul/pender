@@ -382,6 +382,10 @@ span.meet img {
 
 .post-card-img img {
   width: 100%;
+  min-height: 220px;
+  max-height: 220px;
+  height: 100%;
+  object-fit: cover;
   border-radius: 20px;
 }
 

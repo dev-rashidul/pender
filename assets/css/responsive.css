@@ -278,6 +278,12 @@
     font-size: 28px;
   }
 
+  .post-card-img img {
+    min-height: 180px;
+    max-height: 180px;
+    height: 100%;
+  }
+
   .upload-post-img {
     max-width: 100%;
     padding: 50px 0 80px;
