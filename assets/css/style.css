@@ -136,6 +136,64 @@ a.login:hover {
   border: 1px solid #fca311;
 }
 
+.user-profile-icon {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 270px;
+  padding: 40px 30px;
+  background: #ffffff;
+  filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.2));
+  border-radius: 30px;
+  display: none;
+}
+
+.profile-dropdown.active {
+  display: block;
+}
+
+.profile-user-info img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.profile-user-info h5 {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  color: #1d1d1d;
+  margin: 0;
+}
+
+.profile-user-info p {
+  color: #1d1d1dcc;
+  margin: 0;
+}
+
+.user-edit-profile span,
+.user-logout span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #1d1d1d;
+}
+
+.profile-dropdown hr {
+  border-top: 1px solid #62d8f4;
+  opacity: 1;
+}
+
 .navbar-toggler {
   border: 0 !important;
   margin-top: -15px;
@@ -191,10 +249,6 @@ a.login:hover {
 
 .navbar-toggler.collapsed .toggler-icon {
   background-color: #151515;
-}
-
-.nav-buttons img {
-  width: 20px;
 }
 
 @media (max-width: 1200px) {
@@ -418,6 +472,12 @@ span.meet img {
   margin: 0;
 }
 
+.post-card span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #27525c;
+}
+
 .post-card p span img {
   margin-top: -20px;
 }
@@ -526,3 +586,130 @@ span.meet img {
 /* Upload Post Section CSS End */
 
 /* Main Part CSS End */
+
+/* ======***=======
+User Page CSS 
+/* ======***======= */
+
+/* User Hero Section CSS Start */
+
+.user-hero-wrapper {
+  margin-top: 150px;
+}
+
+.user-hero-container {
+  background: #ffffff;
+  filter: drop-shadow(0px 7px 15px rgba(0, 0, 0, 0.2));
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.user-hero-top {
+  background: url(../images/user-top-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+
+.user-edit-icon {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+.user-hero-bottom-wrapper {
+  padding: 0 40px 70px 100px;
+}
+
+.user-info-img img {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-top: -100px;
+  border: 10px solid #ffffff;
+  border-radius: 100%;
+}
+
+.user-info-content h4 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.user-contact-details li {
+  margin-right: 30px;
+}
+
+.user-contact-details a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1d;
+  padding-left: 10px;
+}
+
+.user-social li {
+  position: relative;
+  margin: 0px 25px;
+}
+
+.user-social li::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: -65px;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 1px;
+  background: #b24a3f;
+}
+
+.user-footer-social li::after {
+  background: #5a6381;
+}
+
+.user-social li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.user-social li:last-child:after {
+  display: none;
+}
+
+.user-social li a {
+  padding: 0 10px;
+}
+
+/* User Hero Section CSS End */
+
+/* User page Post Section CSS Start */
+
+.user-page-bottom-body {
+  background: linear-gradient(
+    155.53deg,
+    #ffce1d5d 10.5%,
+    rgba(157, 26, 113, 0.096) 98.28%
+  );
+  box-shadow: 0px 27px 100px 5px rgba(11, 47, 91, 0.1);
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.user-post {
+  padding-bottom: 120px;
+}
+
+/* Footer Section CSS */
+
+.footer-copyright p {
+  color: #000000;
+  margin: 0;
+}
+
+/* User page Post Section CSS End */
