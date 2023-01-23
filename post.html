@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pender - Post</title>
+
+    <!-- Owl Carousel CSS for Slider -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Part HTML Start -->
+
+    <header>
+      <!-- Header Section HTML Start -->
+
+      <section id="Header">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid">
+            <a class="logo" href="index.html"
+              ><img src="assets/images/logo.svg" alt="logo" />Pender</a
+            >
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav pl-md-5 mx-auto pb-0">
+                <form>
+                  <div class="search-form">
+                    <button type="submit" class="search-btn">
+                      <img src="assets/images/search.svg" alt="search" />
+                    </button>
+                    <div class="search-form-field">
+                      <input type="text" placeholder="Search for your pet..." />
+                      <span>
+                        <img src="assets/images/filter.svg" alt="filter" />
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </ul>
+              <div class="navbar-nav ml-auto">
+                <div class="nav-buttons">
+                  <div class="user-profile position-relative" href="#">
+                    <img
+                      class="user-profile-icon"
+                      src="assets/images/user-profile.png"
+                      alt="user-profile"
+                    />
+                    <div class="profile-dropdown">
+                      <div class="profile-user-info d-flex align-items-center">
+                        <img
+                          src="assets/images/user-profile.png"
+                          alt="user-profile"
+                        />
+                        <div>
+                          <h5>Gio Giorgi</h5>
+                          <p>Giorgi@gmail.com</p>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="user-edit-profile">
+                        <a href="user.html" class="d-flex align-items-center"
+                          ><img src="assets/images/edit.svg" alt="edit" />
+                          <span class="ps-4">View Profile</span></a
+                        >
+                      </div>
+                      <hr />
+                      <div class="user-logout">
+                        <a
+                          href="#"
+                          class="d-flex justify-content-between align-items-center"
+                          ><img src="assets/images/logout.svg" alt="logout" />
+                          <span>Log out</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </section>
+
+      <!-- Header Section HTML End -->
+
+      <!-- Post Hero Section HTML Start -->
+
+      <section id="Post-hero">
+        <div class="post-hero-wrapper position-relative">
+          <div class="container-fluid">
+            <div class="post-hero-title">
+              <h2>
+                For Sale
+                <div class="post-hero-title-border">
+                  <img
+                    src="assets/images/post-hero-title-border-shape.svg"
+                    alt="post-hero-title-border-shape"
+                  />
+                </div>
+              </h2>
+            </div>
+            <div class="post-hero-container d-none d-md-flex">
+              <div class="post-hero-card post-hero-card1">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img5.png" alt="post-img5" />
+                </div>
+              </div>
+              <div class="post-hero-card post-hero-card2">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img2.png" alt="post-img2" />
+                </div>
+              </div>
+              <div class="post-hero-card post-hero-card3">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img3.png" alt="post-img3" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider for Mobile -->
+
+            <div
+              class="post-hero-container hero-slider post-slider owl-carousel owl-theme d-md-none"
+            >
+              <div class="post-hero-card post-hero-card1">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img5.png" alt="post-img5" />
+                </div>
+              </div>
+              <div class="post-hero-card post-hero-card2">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img2.png" alt="post-img2" />
+                </div>
+              </div>
+              <div class="post-hero-card post-hero-card3">
+                <div class="post-hero-card-img">
+                  <img src="assets/images/post-img3.png" alt="post-img3" />
+                </div>
+              </div>
+            </div>
+            <div class="post-info-container">
+              <div class="row">
+                <div class="col-md-7">
+                  <div class="post-info-text">
+                    <div class="post-info-location d-flex align-items-center">
+                      <li class="post-date position-relative">
+                        <img src="assets/images/calender.svg" alt="calender" />
+                        12.01.2023
+                      </li>
+                      <li>
+                        <img
+                          src="assets/images/location-icon.svg"
+                          alt="calender"
+                        />
+                        Tbilisi
+                      </li>
+                    </div>
+                    <div class="post-info-title">
+                      <h2>
+                        German Rex 2
+                        <img src="assets/images/slash.svg" alt="slash" /> Years
+                        Old
+                      </h2>
+                    </div>
+                    <div class="post-info-price">
+                      <h3>
+                        1732
+                        <img src="assets/images/currency.svg" alt="currency" />
+                      </h3>
+                    </div>
+                    <div class="post-info-description mt-5">
+                      <h4>Description</h4>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo consequat.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div
+                    class="post-user-info d-flex align-items-center mt-4 mt-md-0"
+                  >
+                    <div class="post-user-img">
+                      <img
+                        src="assets/images/user-profile.png"
+                        alt="user-profile"
+                      />
+                    </div>
+                    <div class="post-user-info-text">
+                      <h4>Anamaria</h4>
+                      <p>
+                        <img
+                          src="assets/images/phone-icon.svg"
+                          alt="phone-icon"
+                        />
+                        (+995) 521 23 45 67
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="post-hero-shape">
+            <img src="assets/images/hero-shape1.png" alt="hero-shape1" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Post Hero Section HTML End -->
+
+      <!-- Post Info Section HTML Start -->
+
+      <!-- Post Info Section HTML End -->
+    </header>
+
+    <!-- Header Part HTML End -->
+
+    <!-- User Page Body Section HTML Start -->
+
+    <div class="user-page-bottom-body">
+      <!-- Post Section HTML Start -->
+
+      <section id="Post" class="user-post">
+        <div class="post-wrapper position-relative overflow-hidden pb-5">
+          <div class="container-fluid">
+            <div class="section-title">
+              <h2>Similar Posts</h2>
+            </div>
+            <div
+              class="row align-items-center justify-content-center d-none d-md-flex"
+            >
+              <div class="col-sm-6 col-lg-3">
+                <div class="post-card">
+                  <div class="post-card-img position-relative">
+                    <img src="assets/images/post-img1.png" alt="post-img1" />
+                    <span>Selling</span>
+                  </div>
+                  <h5>German Rex 323</h5>
+                  <p>
+                    1732
+                    <span
+                      ><img src="assets/images/currency.svg" alt="currency"
+                    /></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="post-card">
+                  <div class="post-card-img position-relative">
+                    <img src="assets/images/post-img2.png" alt="post-img2" />
+                    <span>Adopting</span>
+                  </div>
+                  <h5>German Rex 323</h5>
+                  <p>
+                    1732
+                    <span
+                      ><img src="assets/images/currency.svg" alt="currency"
+                    /></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="post-card">
+                  <div class="post-card-img position-relative">
+                    <img src="assets/images/post-img3.png" alt="post-img3" />
+                    <span>Meeting</span>
+                  </div>
+                  <h5>German Rex 323</h5>
+                  <p>
+                    1732
+                    <span
+                      ><img src="assets/images/currency.svg" alt="currency"
+                    /></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider For Mobile -->
+
+            <div class="post-slider owl-carousel owl-theme d-md-none">
+              <div class="post-card item">
+                <div class="post-card-img position-relative">
+                  <img src="assets/images/post-img1.png" alt="post-img1" />
+                  <span>Selling</span>
+                </div>
+                <h5>German Rex 323</h5>
+                <p>
+                  1732
+                  <span
+                    ><img src="assets/images/currency.svg" alt="currency"
+                  /></span>
+                </p>
+              </div>
+              <div class="post-card item">
+                <div class="post-card-img position-relative">
+                  <img src="assets/images/post-img2.png" alt="post-img2" />
+                  <span>Adopting</span>
+                </div>
+                <h5>German Rex 323</h5>
+                <p>
+                  1732
+                  <span
+                    ><img src="assets/images/currency.svg" alt="currency"
+                  /></span>
+                </p>
+              </div>
+              <div class="post-card item">
+                <div class="post-card-img position-relative">
+                  <img src="assets/images/post-img3.png" alt="post-img3" />
+                  <span>Meeting</span>
+                </div>
+                <h5>German Rex 323</h5>
+                <p>
+                  1732
+                  <span
+                    ><img src="assets/images/currency.svg" alt="currency"
+                  /></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Post Section HTML End -->
+
+      <!-- User Footer Section HTML Start -->
+
+      <footer id="User-footer" class="user-footer">
+        <div class="container-fluid">
+          <div class="user-footer-container">
+            <div class="row align-items-center">
+              <div class="col-md-4">
+                <div class="footer-logo">
+                  <a class="logo" href="index.html"
+                    ><img src="assets/images/logo.svg" alt="logo" />Pender</a
+                  >
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div
+                  class="user-social user-footer-social d-flex justify-content-center align-items-center mt-4 mt-md-0"
+                >
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="assets/images/instagram-gray-icon.svg"
+                        alt="instagram-gray-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="assets/images/facebook-gray-icon.svg"
+                        alt="facebook-gray-icon"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="#"
+                      ><img
+                        src="assets/images/linkedin-gray-icon.svg"
+                        alt="linkedin-gray-icon"
+                    /></a>
+                  </li>
+                </div>
+              </div>
+              <div class="col-md-4 mt-4 mt-md-0">
+                <div
+                  class="footer-copyright text-center text-md-start float-md-end"
+                >
+                  <p>
+                    <img
+                      class="me-3"
+                      src="assets/images/copyright-icon.svg"
+                      alt="copyright-icon"
+                    />All rights reserved
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- User Footer Section HTML End -->
+    </div>
+
+    <!-- User Page Body Section HTML End -->
+
+    <!-- Jquery For Slider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <!-- Owl Carousel JavaScript for Slider -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Post Slider JS
+      $(".post-slider").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: false,
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 2000,
+      });
+    </script>
+  </body>
+</html>
