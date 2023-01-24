@@ -1043,6 +1043,10 @@ Post Page CSS
 
 /* Post Slider CSS */
 
+.post-card.item {
+  box-shadow: none;
+}
+
 .post-card p img {
   max-width: 20px;
   width: 100%;
