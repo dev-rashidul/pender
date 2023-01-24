@@ -502,4 +502,9 @@
   .post-info-description h4 {
     font-size: 25px;
   }
+
+  .post-user-info {
+    float: none;
+    margin: auto;
+  }
 }
