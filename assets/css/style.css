@@ -175,11 +175,13 @@ a.login:hover {
   text-align: left;
   color: #1d1d1d;
   margin: 0;
+  word-break: break-word;
 }
 
 .profile-user-info p {
   color: #1d1d1dcc;
   margin: 0;
+  word-break: break-word;
 }
 
 .user-edit-profile span,
