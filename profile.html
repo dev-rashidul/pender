@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pender - Profile</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+  </head>
+  <body>
+    <!-- Header Part HTML Start -->
+
+    <header>
+      <!-- Header Section HTML Start -->
+
+      <section id="Header" class="position-relative">
+        <nav class="navbar navbar-expand-xl">
+          <div class="container-fluid">
+            <a class="logo" href="index.html"
+              ><img src="assets/images/logo.svg" alt="logo" />Pender</a
+            >
+            <button
+              class="navbar-toggler collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="toggler-icon top-bar"></span>
+              <span class="toggler-icon middle-bar"></span>
+              <span class="toggler-icon bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav pl-md-5 mx-auto pb-0">
+                <form>
+                  <div class="search-form">
+                    <button type="submit" class="search-btn">
+                      <img src="assets/images/search.svg" alt="search" />
+                    </button>
+                    <div class="search-form-field">
+                      <input type="text" placeholder="Search for your pet..." />
+                      <span class="filterIcon">
+                        <img src="assets/images/filter.svg" alt="filter" />
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </ul>
+              <div class="navbar-nav ml-auto">
+                <div class="nav-buttons">
+                  <div class="user-profile position-relative" href="#">
+                    <img
+                      class="user-profile-icon"
+                      src="assets/images/user-profile.png"
+                      alt="user-profile"
+                    />
+                    <div class="profile-dropdown">
+                      <div class="profile-user-info d-flex align-items-center">
+                        <img
+                          src="assets/images/user-profile.png"
+                          alt="user-profile"
+                        />
+                        <div>
+                          <h5>Gio Giorgi</h5>
+                          <p>Giorgi@gmail.com</p>
+                        </div>
+                      </div>
+                      <hr />
+                      <div class="user-edit-profile">
+                        <a href="user.html" class="d-flex align-items-center"
+                          ><img src="assets/images/edit.svg" alt="edit" />
+                          <span class="ps-4">View Profile</span></a
+                        >
+                      </div>
+                      <hr />
+                      <div class="user-logout">
+                        <a
+                          href="#"
+                          class="d-flex justify-content-between align-items-center"
+                          ><img src="assets/images/logout.svg" alt="logout" />
+                          <span>Log out</span></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Search Filter -->
+        <div class="search-filter">
+          <div class="filter-form-wrapper">
+            <h4>Filter By:</h4>
+            <form>
+              <div class="filter-form">
+                <div class="form-input-field">
+                  <label>Animal</label>
+                  <select>
+                    <option value="Select....">Select....</option>
+                    <option value="Cat">Cat</option>
+                  </select>
+                </div>
+                <div class="form-input-field">
+                  <label>Post Type</label>
+                  <select>
+                    <option value="Buy">Buy</option>
+                    <option value="Meet">Meet</option>
+                    <option value="Gift">Gift</option>
+                  </select>
+                </div>
+                <div class="form-input-field">
+                  <label>City/town</label>
+                  <select>
+                    <option value="Select....">Select....</option>
+                    <option value="Dhaka">Dhaka</option>
+                  </select>
+                </div>
+                <div class="form-input-field">
+                  <label>Animal Age</label>
+                  <div class="d-flex">
+                    <input
+                      class="me-1"
+                      type="text"
+                      placeholder="Min..."
+                      required
+                    />
+                    <input
+                      class="ms-1"
+                      type="text"
+                      placeholder="Max..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-input-field">
+                  <label>Price</label>
+                  <div class="d-flex">
+                    <input
+                      class="me-1"
+                      type="text"
+                      placeholder="Min..."
+                      required
+                    />
+                    <input
+                      class="ms-1"
+                      type="text"
+                      placeholder="Max..."
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-btn">
+                  <input type="submit" value="Filter" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Header Section HTML End -->
+    </header>
+
+    <!-- Header Part HTML End -->
+
+    <!-- Profile Section HTML Start -->
+
+    <section id="Profile-main">
+      <div class="profile-main-wrapper">
+        <div class="bars d-xl-none">
+          <span><img src="assets/images/bars.png" alt="bars" /> Sidebar</span>
+        </div>
+        <div id="Profile-sidebar">
+          <div class="profile-sidebar-wrapper">
+            <div class="filter-form-wrapper">
+              <h4>Filter By:</h4>
+              <form>
+                <div class="filter-form">
+                  <div class="form-input-field">
+                    <label>Animal</label>
+                    <select>
+                      <option value="Select....">Select....</option>
+                      <option value="Cat">Cat</option>
+                    </select>
+                  </div>
+                  <div class="form-input-field">
+                    <label>Post Type</label>
+                    <select>
+                      <option value="Buy">Buy</option>
+                      <option value="Meet">Meet</option>
+                      <option value="Gift">Gift</option>
+                    </select>
+                  </div>
+                  <div class="form-input-field">
+                    <label>City/town</label>
+                    <select>
+                      <option value="Select....">Select....</option>
+                      <option value="Dhaka">Dhaka</option>
+                    </select>
+                  </div>
+                  <div class="form-input-field">
+                    <label>Animal Age</label>
+                    <div class="d-flex">
+                      <input
+                        class="me-1"
+                        type="text"
+                        placeholder="Min..."
+                        required
+                      />
+                      <input
+                        class="ms-1"
+                        type="text"
+                        placeholder="Max..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-input-field">
+                    <label>Price</label>
+                    <div class="d-flex">
+                      <input
+                        class="me-1"
+                        type="text"
+                        placeholder="Min..."
+                        required
+                      />
+                      <input
+                        class="ms-1"
+                        type="text"
+                        placeholder="Max..."
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <input type="submit" value="Filter" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="Profile-contents" class="position-relative">
+          <div class="profile-contents-wrapper">
+            <div class="post-wrapper position-relative">
+              <div class="section-title">
+                <h2>VIP Posts</h2>
+              </div>
+              <div class="row vip-post-wrapper align-items-center mt-5">
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img1.png" alt="post-img1" />
+                      <span>Selling</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img2.png" alt="post-img2" />
+                      <span>Adopting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profile-shape2">
+                <img
+                  src="assets/images/profile-shape2.png"
+                  alt="profile-shape2"
+                />
+              </div>
+            </div>
+
+            <!-- Latest Post -->
+
+            <div class="post-wrapper position-relative mt-5 pt-5">
+              <div class="d-md-flex justify-content-between align-items-center">
+                <div class="section-title">
+                  <h2>Latest Post</h2>
+                </div>
+                <div class="sorted-by">
+                  <form>
+                    <label>Sorted By:</label>
+                    <select>
+                      <option value="Newest">Newest</option>
+                      <option value="Oldest">Oldest</option>
+                    </select>
+                  </form>
+                </div>
+              </div>
+              <div class="row align-items-center mt-4">
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img1.png" alt="post-img1" />
+                      <span>Selling</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img2.png" alt="post-img2" />
+                      <span>Adopting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-lg-6 col-xl-4">
+                  <div class="post-card">
+                    <div class="post-card-img position-relative">
+                      <img src="assets/images/post-img3.png" alt="post-img3" />
+                      <span>Meeting</span>
+                    </div>
+                    <h5>German Rex 323</h5>
+                    <div class="d-flex justify-content-between align-items-end">
+                      <p>
+                        1732
+                        <span
+                          ><img src="assets/images/currency.svg" alt="currency"
+                        /></span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Latest Post Pagination -->
+
+            <div class="latest-pagination">
+              <div class="latest-pagi-wrapper">
+                <ul>
+                  <li>
+                    <img
+                      src="assets/images/chevron-left.svg"
+                      alt="chevron-left"
+                    />
+                  </li>
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                  <li>4</li>
+                  <li>5</li>
+                  <li>
+                    <img
+                      src="assets/images/chevron-right.svg"
+                      alt="chevron-right"
+                    />
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="profile-shape1">
+            <img src="assets/images/profile-shape1.png" alt="profile-shape1" />
+          </div>
+          <div class="profile-shape3">
+            <img src="assets/images/profile-shape3.png" alt="profile-shape3" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile Section HTML End -->
+
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // Sidebar Expand JavaScript
+
+      const bars = document.querySelector(".bars");
+      const sidebar = document.querySelector("#Profile-sidebar");
+
+      bars.addEventListener("click", function () {
+        sidebar.classList.toggle("active");
+      });
+
+      // Search Filer Expand JavaScript
+
+      const filterIcon = document.querySelector(".filterIcon");
+      const searchFilter = document.querySelector(".search-filter");
+
+      filterIcon.addEventListener("click", function () {
+        searchFilter.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
