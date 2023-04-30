@@ -158,6 +158,11 @@
     padding: 40px 20px;
   }
 
+  .v-post-card-img {
+    max-width: 300px;
+    width: 100%;
+  }
+
   .v-post-card-img img {
     max-width: 300px;
     width: 100%;
